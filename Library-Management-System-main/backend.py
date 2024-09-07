@@ -19,7 +19,7 @@ def register_insert(username, password):
 # m =register_insert("kanava","Kanavarora1505")
 # print(m)
 
-
+# login form created in the backend
 def login_data(username,password):
     x = database.login.count_documents({"$expr":{"$and":[{"$eq":["$username",str(username)]},{"$eq":["$password",str(password)]}]}})
     return x
